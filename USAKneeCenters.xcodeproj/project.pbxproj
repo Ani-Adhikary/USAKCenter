@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7722DB09203C275800776711 /* Welcome.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7722DB08203C275800776711 /* Welcome.xcassets */; };
+		77346CAD207FAEA400C628B4 /* SignUpTermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77346CAC207FAEA400C628B4 /* SignUpTermsOfServiceViewController.swift */; };
+		773B313920650100006D1609 /* DoctorTrackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B313820650100006D1609 /* DoctorTrackingItem.swift */; };
+		773B313B20650159006D1609 /* DoctorTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B313A20650159006D1609 /* DoctorTrackingTableViewCell.swift */; };
+		773B313D20650695006D1609 /* PatientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B313C20650695006D1609 /* PatientsTableViewController.swift */; };
+		773B313F2065227A006D1609 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B313E2065227A006D1609 /* PatientTableViewCell.swift */; };
+		773B3141206532D4006D1609 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B3140206532D4006D1609 /* PatientDetailViewController.swift */; };
+		773B314320653863006D1609 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B314220653863006D1609 /* PlanTableViewCell.swift */; };
+		773B314520653EE5006D1609 /* UKCCheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B314420653EE5006D1609 /* UKCCheckBoxButton.swift */; };
+		7747CF0E207226C6008EA8FF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747CF0D207226C6008EA8FF /* Alert.swift */; };
+		7747CF1020722703008EA8FF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747CF0F20722703008EA8FF /* String+Extension.swift */; };
+		77BBFAB2203F191D0033A01C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BBFAB0203F191D0033A01C /* Welcome.storyboard */; };
+		77E7313E203F07EA007B5833 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7313D203F07EA007B5833 /* WelcomeViewController.swift */; };
+		77E73140203F07F2007B5833 /* WelcomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7313F203F07F2007B5833 /* WelcomeContentViewController.swift */; };
+		77FF72E52072449500F1C047 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FF72E32072449500F1C047 /* SignUp.storyboard */; };
+		77FF72EA207246E600F1C047 /* TrackingPatient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FF72E8207246E500F1C047 /* TrackingPatient.storyboard */; };
+		AF1D3155206802BC007681FC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D3154206802BC007681FC /* MainTabBarController.swift */; };
+		AF1D3157206805E7007681FC /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D3156206805E7007681FC /* ProfileNavigationController.swift */; };
+		AF1D315920680634007681FC /* EducationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D315820680634007681FC /* EducationNavigationController.swift */; };
+		AF1D315B2068068E007681FC /* DoctorTrackingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D315A2068068E007681FC /* DoctorTrackingNavigationController.swift */; };
+		AF1D315D206806D5007681FC /* UserPlanNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D315C206806D5007681FC /* UserPlanNavigationController.swift */; };
+		AF1D315F20680D29007681FC /* SignUpWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D315E20680D29007681FC /* SignUpWelcomeViewController.swift */; };
+		AF1D3167206810A8007681FC /* PatientTrackingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D3166206810A8007681FC /* PatientTrackingNavigationController.swift */; };
+		AF1D316A2068145B007681FC /* TrackingPatient.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1D31692068145B007681FC /* TrackingPatient.xcassets */; };
+		AF1D316C2068151D007681FC /* UKCSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D316B2068151D007681FC /* UKCSlider.swift */; };
+		AF1D316F20682E61007681FC /* PatientTrackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D316E20682E61007681FC /* PatientTrackingItem.swift */; };
+		AF1D317120682EF1007681FC /* PatientTrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D317020682EF1007681FC /* PatientTrackingTableViewCell.swift */; };
+		AF1D317320682F37007681FC /* PatientTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D317220682F37007681FC /* PatientTrackingViewController.swift */; };
+		AF2E688920532245002EB635 /* UKCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2E688820532245002EB635 /* UKCButton.swift */; };
+		AF2E688B20532508002EB635 /* UKCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2E688A20532508002EB635 /* UKCTextField.swift */; };
+		AF5C170220604E4B00A5397E /* UKCCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C170120604E4B00A5397E /* UKCCustomView.swift */; };
+		AF84D9DA206178CC00274A2E /* UKCProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84D9D9206178CC00274A2E /* UKCProfileImageView.swift */; };
+		AF84D9DC20617A7A00274A2E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84D9DB20617A7A00274A2E /* SettingsViewController.swift */; };
+		AFB329AB203837580062F185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB329AA203837580062F185 /* AppDelegate.swift */; };
+		AFB329AD203837580062F185 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB329AC203837580062F185 /* SignInViewController.swift */; };
+		AFB329B0203837580062F185 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB329AE203837580062F185 /* SignIn.storyboard */; };
+		AFB329B3203837580062F185 /* USAKneeCenters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFB329B1203837580062F185 /* USAKneeCenters.xcdatamodeld */; };
+		AFB329B5203837580062F185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB329B4203837580062F185 /* Assets.xcassets */; };
+		AFB329B8203837580062F185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB329B6203837580062F185 /* LaunchScreen.storyboard */; };
+		AFB5457B20384698009AFADF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5457A20384698009AFADF /* SignUpViewController.swift */; };
+		AFB5457D20387696009AFADF /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5457C20387696009AFADF /* PlanViewController.swift */; };
+		AFB5457F203876A7009AFADF /* DoctorTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5457E203876A7009AFADF /* DoctorTrackingViewController.swift */; };
+		AFB54581203876C2009AFADF /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB54580203876C2009AFADF /* EducationViewController.swift */; };
+		AFB54583203876CF009AFADF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB54582203876CF009AFADF /* ProfileViewController.swift */; };
+		AFB545892038B07F009AFADF /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB545872038B07F009AFADF /* Plan.storyboard */; };
+		AFB5458E2038B206009AFADF /* Education.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5458C2038B206009AFADF /* Education.storyboard */; };
+		AFB545932038C6CA009AFADF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB545912038C6CA009AFADF /* Profile.storyboard */; };
+		AFB545962038C6DF009AFADF /* Tracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB545942038C6DF009AFADF /* Tracking.storyboard */; };
+		AFCF71A72049A08F00127229 /* SignUpUserBirthdayPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF71A62049A08F00127229 /* SignUpUserBirthdayPickerViewController.swift */; };
+		AFCF71A92049A0A200127229 /* SignUpUserWeightPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF71A82049A0A200127229 /* SignUpUserWeightPickerViewController.swift */; };
+		AFCF71AB2049A11B00127229 /* SignUpUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF71AA2049A11B00127229 /* SignUpUsernameViewController.swift */; };
+		AFCF71CB2049B3C400127229 /* SignUpUserGenderPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF71CA2049B3C400127229 /* SignUpUserGenderPickerViewController.swift */; };
+		AFE748FB2066BD61008F76E5 /* InvitePatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE748FA2066BD61008F76E5 /* InvitePatientViewController.swift */; };
+		AFF233692067CC0B00E63DD2 /* Profile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF233682067CC0B00E63DD2 /* Profile.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7722DB08203C275800776711 /* Welcome.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Welcome.xcassets; sourceTree = "<group>"; };
+		77346CAC207FAEA400C628B4 /* SignUpTermsOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		773B313820650100006D1609 /* DoctorTrackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTrackingItem.swift; sourceTree = "<group>"; };
+		773B313A20650159006D1609 /* DoctorTrackingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTrackingTableViewCell.swift; sourceTree = "<group>"; };
+		773B313C20650695006D1609 /* PatientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsTableViewController.swift; sourceTree = "<group>"; };
+		773B313E2065227A006D1609 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		773B3140206532D4006D1609 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
+		773B314220653863006D1609 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
+		773B314420653EE5006D1609 /* UKCCheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKCCheckBoxButton.swift; sourceTree = "<group>"; };
+		7747CF0D207226C6008EA8FF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7747CF0F20722703008EA8FF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		77BBFAB1203F191D0033A01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
+		77E7313D203F07EA007B5833 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		77E7313F203F07F2007B5833 /* WelcomeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeContentViewController.swift; sourceTree = "<group>"; };
+		77FF72E42072449500F1C047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = USAKneeCenters/Base.lproj/SignUp.storyboard; sourceTree = "<group>"; };
+		77FF72E9207246E500F1C047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TrackingPatient.storyboard; sourceTree = "<group>"; };
+		AF1D3154206802BC007681FC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		AF1D3156206805E7007681FC /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		AF1D315820680634007681FC /* EducationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationNavigationController.swift; sourceTree = "<group>"; };
+		AF1D315A2068068E007681FC /* DoctorTrackingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTrackingNavigationController.swift; sourceTree = "<group>"; };
+		AF1D315C206806D5007681FC /* UserPlanNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlanNavigationController.swift; sourceTree = "<group>"; };
+		AF1D315E20680D29007681FC /* SignUpWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWelcomeViewController.swift; sourceTree = "<group>"; };
+		AF1D3166206810A8007681FC /* PatientTrackingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTrackingNavigationController.swift; sourceTree = "<group>"; };
+		AF1D31692068145B007681FC /* TrackingPatient.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TrackingPatient.xcassets; sourceTree = "<group>"; };
+		AF1D316B2068151D007681FC /* UKCSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKCSlider.swift; sourceTree = "<group>"; };
+		AF1D316E20682E61007681FC /* PatientTrackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTrackingItem.swift; sourceTree = "<group>"; };
+		AF1D317020682EF1007681FC /* PatientTrackingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTrackingTableViewCell.swift; sourceTree = "<group>"; };
+		AF1D317220682F37007681FC /* PatientTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTrackingViewController.swift; sourceTree = "<group>"; };
+		AF2E688820532245002EB635 /* UKCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKCButton.swift; sourceTree = "<group>"; };
+		AF2E688A20532508002EB635 /* UKCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKCTextField.swift; sourceTree = "<group>"; };
+		AF5C170120604E4B00A5397E /* UKCCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKCCustomView.swift; sourceTree = "<group>"; };
+		AF84D9D9206178CC00274A2E /* UKCProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKCProfileImageView.swift; sourceTree = "<group>"; };
+		AF84D9DB20617A7A00274A2E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AFB329A7203837580062F185 /* USAKneeCenters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USAKneeCenters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB329AA203837580062F185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFB329AC203837580062F185 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AFB329AF203837580062F185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignIn.storyboard; sourceTree = "<group>"; };
+		AFB329B2203837580062F185 /* USAKneeCenters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USAKneeCenters.xcdatamodel; sourceTree = "<group>"; };
+		AFB329B4203837580062F185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFB329B7203837580062F185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFB329B9203837580062F185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB329C2203837590062F185 /* USAKneeCentersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USAKneeCentersTests.swift; sourceTree = "<group>"; };
+		AFB329C4203837590062F185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB329CD203837590062F185 /* USAKneeCentersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USAKneeCentersUITests.swift; sourceTree = "<group>"; };
+		AFB329CF203837590062F185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB5457A20384698009AFADF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AFB5457C20387696009AFADF /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		AFB5457E203876A7009AFADF /* DoctorTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTrackingViewController.swift; sourceTree = "<group>"; };
+		AFB54580203876C2009AFADF /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		AFB54582203876CF009AFADF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AFB545882038B07F009AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = USAKneeCenters/USAKneeCenters/Base.lproj/Plan.storyboard; sourceTree = "<group>"; };
+		AFB5458D2038B206009AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = USAKneeCenters/USAKneeCenters/Base.lproj/Education.storyboard; sourceTree = "<group>"; };
+		AFB545922038C6CA009AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		AFB545952038C6DF009AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tracking.storyboard; sourceTree = "<group>"; };
+		AFCF71A62049A08F00127229 /* SignUpUserBirthdayPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserBirthdayPickerViewController.swift; sourceTree = "<group>"; };
+		AFCF71A82049A0A200127229 /* SignUpUserWeightPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserWeightPickerViewController.swift; sourceTree = "<group>"; };
+		AFCF71AA2049A11B00127229 /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUsernameViewController.swift; sourceTree = "<group>"; };
+		AFCF71CA2049B3C400127229 /* SignUpUserGenderPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserGenderPickerViewController.swift; sourceTree = "<group>"; };
+		AFE748FA2066BD61008F76E5 /* InvitePatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitePatientViewController.swift; sourceTree = "<group>"; };
+		AFF233682067CC0B00E63DD2 /* Profile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Profile.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFB329A4203837580062F185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7722DB04203C270F00776711 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				7722DB07203C273800776711 /* Views */,
+				7722DB06203C272B00776711 /* Resources */,
+				7722DB05203C272000776711 /* Controllers */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		7722DB05203C272000776711 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77E7313F203F07F2007B5833 /* WelcomeContentViewController.swift */,
+				77E7313D203F07EA007B5833 /* WelcomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7722DB06203C272B00776711 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7722DB08203C275800776711 /* Welcome.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7722DB07203C273800776711 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77BBFAB0203F191D0033A01C /* Welcome.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		773B31352064FFE6006D1609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				773B313820650100006D1609 /* DoctorTrackingItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF1D315320680293007681FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D3154206802BC007681FC /* MainTabBarController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AF1D316020680F2C007681FC /* TrackingPatient */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D316D20682E21007681FC /* Model */,
+				AF1D316820681433007681FC /* Resources */,
+				AF1D316320680F7A007681FC /* Views */,
+				AF1D316220680F71007681FC /* Controller */,
+			);
+			name = TrackingPatient;
+			sourceTree = "<group>";
+		};
+		AF1D316220680F71007681FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D3166206810A8007681FC /* PatientTrackingNavigationController.swift */,
+				AF1D317220682F37007681FC /* PatientTrackingViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF1D316320680F7A007681FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77FF72E8207246E500F1C047 /* TrackingPatient.storyboard */,
+				AF1D317020682EF1007681FC /* PatientTrackingTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF1D316820681433007681FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D31692068145B007681FC /* TrackingPatient.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AF1D316D20682E21007681FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D316E20682E61007681FC /* PatientTrackingItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF9CC99220399F310070F613 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D315320680293007681FC /* Controllers */,
+				AF9CC99720399FC00070F613 /* AppDelegate */,
+				AF9CC99620399FB50070F613 /* Resources */,
+				AF9CC99520399F9E0070F613 /* SupportingFiles */,
+				AF9CC99420399F8F0070F613 /* Views */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		AF9CC99320399F8A0070F613 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AF9CC99A20399FF30070F613 /* Models */,
+				AF9CC99920399FEB0070F613 /* Views */,
+				AF9CC99820399FE30070F613 /* Controllers */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		AF9CC99420399F8F0070F613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329B6203837580062F185 /* LaunchScreen.storyboard */,
+				AF2E688820532245002EB635 /* UKCButton.swift */,
+				AF2E688A20532508002EB635 /* UKCTextField.swift */,
+				AF5C170120604E4B00A5397E /* UKCCustomView.swift */,
+				AF84D9D9206178CC00274A2E /* UKCProfileImageView.swift */,
+				773B314420653EE5006D1609 /* UKCCheckBoxButton.swift */,
+				AF1D316B2068151D007681FC /* UKCSlider.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF9CC99520399F9E0070F613 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329B9203837580062F185 /* Info.plist */,
+				AFB329B1203837580062F185 /* USAKneeCenters.xcdatamodeld */,
+				7747CF0D207226C6008EA8FF /* Alert.swift */,
+				7747CF0F20722703008EA8FF /* String+Extension.swift */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AF9CC99620399FB50070F613 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329B4203837580062F185 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AF9CC99720399FC00070F613 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329AA203837580062F185 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AF9CC99820399FE30070F613 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5457A20384698009AFADF /* SignUpViewController.swift */,
+				AFB329AC203837580062F185 /* SignInViewController.swift */,
+				AFCF71A62049A08F00127229 /* SignUpUserBirthdayPickerViewController.swift */,
+				AFCF71A82049A0A200127229 /* SignUpUserWeightPickerViewController.swift */,
+				AFCF71AA2049A11B00127229 /* SignUpUsernameViewController.swift */,
+				AFCF71CA2049B3C400127229 /* SignUpUserGenderPickerViewController.swift */,
+				AF1D315E20680D29007681FC /* SignUpWelcomeViewController.swift */,
+				77346CAC207FAEA400C628B4 /* SignUpTermsOfServiceViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AF9CC99920399FEB0070F613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329AE203837580062F185 /* SignIn.storyboard */,
+				77FF72E32072449500F1C047 /* SignUp.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF9CC99A20399FF30070F613 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AF9CC99B2039A0500070F613 /* UserPlan */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5457C20387696009AFADF /* PlanViewController.swift */,
+				AFB545872038B07F009AFADF /* Plan.storyboard */,
+				AF1D315C206806D5007681FC /* UserPlanNavigationController.swift */,
+			);
+			name = UserPlan;
+			sourceTree = "<group>";
+		};
+		AF9CC99C2039A0730070F613 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				773B31352064FFE6006D1609 /* Model */,
+				AF9CC99E2039A0910070F613 /* Controller */,
+				AF9CC99D2039A0850070F613 /* Views */,
+			);
+			name = Tracking;
+			sourceTree = "<group>";
+		};
+		AF9CC99D2039A0850070F613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB545942038C6DF009AFADF /* Tracking.storyboard */,
+				773B313A20650159006D1609 /* DoctorTrackingTableViewCell.swift */,
+				773B313E2065227A006D1609 /* PatientTableViewCell.swift */,
+				773B314220653863006D1609 /* PlanTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF9CC99E2039A0910070F613 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5457E203876A7009AFADF /* DoctorTrackingViewController.swift */,
+				773B313C20650695006D1609 /* PatientsTableViewController.swift */,
+				773B3140206532D4006D1609 /* PatientDetailViewController.swift */,
+				AFE748FA2066BD61008F76E5 /* InvitePatientViewController.swift */,
+				AF1D315A2068068E007681FC /* DoctorTrackingNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF9CC99F2039A0BB0070F613 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				AF9CC9A22039A1050070F613 /* Controllers */,
+				AF9CC9A12039A0F90070F613 /* Views */,
+			);
+			name = Education;
+			sourceTree = "<group>";
+		};
+		AF9CC9A02039A0C60070F613 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AFF233672067CBCF00E63DD2 /* Resources */,
+				AF9CC9A42039A11D0070F613 /* Controllers */,
+				AF9CC9A32039A1160070F613 /* Views */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		AF9CC9A12039A0F90070F613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5458C2038B206009AFADF /* Education.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF9CC9A22039A1050070F613 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB54580203876C2009AFADF /* EducationViewController.swift */,
+				AF1D315820680634007681FC /* EducationNavigationController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AF9CC9A32039A1160070F613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB545912038C6CA009AFADF /* Profile.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF9CC9A42039A11D0070F613 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB54582203876CF009AFADF /* ProfileViewController.swift */,
+				AF84D9DB20617A7A00274A2E /* SettingsViewController.swift */,
+				AF1D3156206805E7007681FC /* ProfileNavigationController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AFB3299E203837580062F185 = {
+			isa = PBXGroup;
+			children = (
+				AFB329A9203837580062F185 /* USAKneeCenters */,
+				AFB329C1203837590062F185 /* USAKneeCentersTests */,
+				AFB329CC203837590062F185 /* USAKneeCentersUITests */,
+				AFB329A8203837580062F185 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFB329A8203837580062F185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329A7203837580062F185 /* USAKneeCenters.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFB329A9203837580062F185 /* USAKneeCenters */ = {
+			isa = PBXGroup;
+			children = (
+				AF9CC99220399F310070F613 /* App */,
+				AF9CC99F2039A0BB0070F613 /* Education */,
+				AF9CC9A02039A0C60070F613 /* Profile */,
+				AF9CC99320399F8A0070F613 /* SignIn */,
+				AF9CC99C2039A0730070F613 /* Tracking */,
+				AF1D316020680F2C007681FC /* TrackingPatient */,
+				AF9CC99B2039A0500070F613 /* UserPlan */,
+				7722DB04203C270F00776711 /* Welcome */,
+			);
+			path = USAKneeCenters;
+			sourceTree = "<group>";
+		};
+		AFB329C1203837590062F185 /* USAKneeCentersTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329C2203837590062F185 /* USAKneeCentersTests.swift */,
+				AFB329C4203837590062F185 /* Info.plist */,
+			);
+			path = USAKneeCentersTests;
+			sourceTree = "<group>";
+		};
+		AFB329CC203837590062F185 /* USAKneeCentersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFB329CD203837590062F185 /* USAKneeCentersUITests.swift */,
+				AFB329CF203837590062F185 /* Info.plist */,
+			);
+			path = USAKneeCentersUITests;
+			sourceTree = "<group>";
+		};
+		AFF233672067CBCF00E63DD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFF233682067CC0B00E63DD2 /* Profile.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFB329A6203837580062F185 /* USAKneeCenters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFB329D2203837590062F185 /* Build configuration list for PBXNativeTarget "USAKneeCenters" */;
+			buildPhases = (
+				AFB329A3203837580062F185 /* Sources */,
+				AFB329A4203837580062F185 /* Frameworks */,
+				AFB329A5203837580062F185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USAKneeCenters;
+			productName = USAKneeCenters;
+			productReference = AFB329A7203837580062F185 /* USAKneeCenters.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFB3299F203837580062F185 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					AFB329A6203837580062F185 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = AFB329A2203837580062F185 /* Build configuration list for PBXProject "USAKneeCenters" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFB3299E203837580062F185;
+			productRefGroup = AFB329A8203837580062F185 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFB329A6203837580062F185 /* USAKneeCenters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFB329A5203837580062F185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB329B8203837580062F185 /* LaunchScreen.storyboard in Resources */,
+				AFB329B5203837580062F185 /* Assets.xcassets in Resources */,
+				AFB5458E2038B206009AFADF /* Education.storyboard in Resources */,
+				77FF72EA207246E600F1C047 /* TrackingPatient.storyboard in Resources */,
+				AFB329B0203837580062F185 /* SignIn.storyboard in Resources */,
+				AF1D316A2068145B007681FC /* TrackingPatient.xcassets in Resources */,
+				AFB545932038C6CA009AFADF /* Profile.storyboard in Resources */,
+				AFB545962038C6DF009AFADF /* Tracking.storyboard in Resources */,
+				77FF72E52072449500F1C047 /* SignUp.storyboard in Resources */,
+				AFB545892038B07F009AFADF /* Plan.storyboard in Resources */,
+				77BBFAB2203F191D0033A01C /* Welcome.storyboard in Resources */,
+				AFF233692067CC0B00E63DD2 /* Profile.xcassets in Resources */,
+				7722DB09203C275800776711 /* Welcome.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFB329A3203837580062F185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E7313E203F07EA007B5833 /* WelcomeViewController.swift in Sources */,
+				AFB329B3203837580062F185 /* USAKneeCenters.xcdatamodeld in Sources */,
+				AFCF71CB2049B3C400127229 /* SignUpUserGenderPickerViewController.swift in Sources */,
+				AFB5457D20387696009AFADF /* PlanViewController.swift in Sources */,
+				AFCF71A72049A08F00127229 /* SignUpUserBirthdayPickerViewController.swift in Sources */,
+				773B313D20650695006D1609 /* PatientsTableViewController.swift in Sources */,
+				AF1D3157206805E7007681FC /* ProfileNavigationController.swift in Sources */,
+				AF1D315D206806D5007681FC /* UserPlanNavigationController.swift in Sources */,
+				7747CF1020722703008EA8FF /* String+Extension.swift in Sources */,
+				AF84D9DC20617A7A00274A2E /* SettingsViewController.swift in Sources */,
+				AF1D317320682F37007681FC /* PatientTrackingViewController.swift in Sources */,
+				AFB54581203876C2009AFADF /* EducationViewController.swift in Sources */,
+				AFB329AD203837580062F185 /* SignInViewController.swift in Sources */,
+				AF1D315F20680D29007681FC /* SignUpWelcomeViewController.swift in Sources */,
+				773B314320653863006D1609 /* PlanTableViewCell.swift in Sources */,
+				AF1D3155206802BC007681FC /* MainTabBarController.swift in Sources */,
+				AFB5457B20384698009AFADF /* SignUpViewController.swift in Sources */,
+				AFCF71A92049A0A200127229 /* SignUpUserWeightPickerViewController.swift in Sources */,
+				773B313F2065227A006D1609 /* PatientTableViewCell.swift in Sources */,
+				7747CF0E207226C6008EA8FF /* Alert.swift in Sources */,
+				AF2E688B20532508002EB635 /* UKCTextField.swift in Sources */,
+				AF1D316F20682E61007681FC /* PatientTrackingItem.swift in Sources */,
+				AF84D9DA206178CC00274A2E /* UKCProfileImageView.swift in Sources */,
+				AF1D315B2068068E007681FC /* DoctorTrackingNavigationController.swift in Sources */,
+				773B313920650100006D1609 /* DoctorTrackingItem.swift in Sources */,
+				AFCF71AB2049A11B00127229 /* SignUpUsernameViewController.swift in Sources */,
+				773B313B20650159006D1609 /* DoctorTrackingTableViewCell.swift in Sources */,
+				AFE748FB2066BD61008F76E5 /* InvitePatientViewController.swift in Sources */,
+				773B3141206532D4006D1609 /* PatientDetailViewController.swift in Sources */,
+				77346CAD207FAEA400C628B4 /* SignUpTermsOfServiceViewController.swift in Sources */,
+				AFB5457F203876A7009AFADF /* DoctorTrackingViewController.swift in Sources */,
+				773B314520653EE5006D1609 /* UKCCheckBoxButton.swift in Sources */,
+				AF1D317120682EF1007681FC /* PatientTrackingTableViewCell.swift in Sources */,
+				AF1D315920680634007681FC /* EducationNavigationController.swift in Sources */,
+				AFB54583203876CF009AFADF /* ProfileViewController.swift in Sources */,
+				AF2E688920532245002EB635 /* UKCButton.swift in Sources */,
+				AF1D316C2068151D007681FC /* UKCSlider.swift in Sources */,
+				AFB329AB203837580062F185 /* AppDelegate.swift in Sources */,
+				77E73140203F07F2007B5833 /* WelcomeContentViewController.swift in Sources */,
+				AF1D3167206810A8007681FC /* PatientTrackingNavigationController.swift in Sources */,
+				AF5C170220604E4B00A5397E /* UKCCustomView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77BBFAB0203F191D0033A01C /* Welcome.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BBFAB1203F191D0033A01C /* Base */,
+			);
+			name = Welcome.storyboard;
+			sourceTree = "<group>";
+		};
+		77FF72E32072449500F1C047 /* SignUp.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77FF72E42072449500F1C047 /* Base */,
+			);
+			name = SignUp.storyboard;
+			sourceTree = "<group>";
+		};
+		77FF72E8207246E500F1C047 /* TrackingPatient.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77FF72E9207246E500F1C047 /* Base */,
+			);
+			name = TrackingPatient.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB329AE203837580062F185 /* SignIn.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB329AF203837580062F185 /* Base */,
+			);
+			name = SignIn.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB329B6203837580062F185 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB329B7203837580062F185 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB545872038B07F009AFADF /* Plan.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB545882038B07F009AFADF /* Base */,
+			);
+			name = Plan.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB5458C2038B206009AFADF /* Education.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB5458D2038B206009AFADF /* Base */,
+			);
+			name = Education.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB545912038C6CA009AFADF /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB545922038C6CA009AFADF /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB545942038C6DF009AFADF /* Tracking.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB545952038C6DF009AFADF /* Base */,
+			);
+			name = Tracking.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFB329D0203837590062F185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFB329D1203837590062F185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFB329D3203837590062F185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W3BU4T6J77;
+				INFOPLIST_FILE = USAKneeCenters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetechstory.USKnee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "62a48c7d-e33a-430d-9a8d-ab566f7fc5fa";
+				PROVISIONING_PROFILE_SPECIFIER = USKneeDeveloperProfile;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFB329D4203837590062F185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W3BU4T6J77;
+				INFOPLIST_FILE = USAKneeCenters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetechstory.USKnee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eef81766-29c9-4e6a-94ee-78cace04f411";
+				PROVISIONING_PROFILE_SPECIFIER = USKneeeDistributionProfile;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFB329A2203837580062F185 /* Build configuration list for PBXProject "USAKneeCenters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB329D0203837590062F185 /* Debug */,
+				AFB329D1203837590062F185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFB329D2203837590062F185 /* Build configuration list for PBXNativeTarget "USAKneeCenters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB329D3203837590062F185 /* Debug */,
+				AFB329D4203837590062F185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFB329B1203837580062F185 /* USAKneeCenters.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFB329B2203837580062F185 /* USAKneeCenters.xcdatamodel */,
+			);
+			currentVersion = AFB329B2203837580062F185 /* USAKneeCenters.xcdatamodel */;
+			path = USAKneeCenters.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFB3299F203837580062F185 /* Project object */;
+}
